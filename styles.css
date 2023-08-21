@@ -1,0 +1,577 @@
+.body {
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* background: url("https://wallpapers.com/images/hd/best-gaming-background-aea1fp9pow4r1l4r.jpg"); */
+    background-image: url("https://secure.insta-luck.net/bnb_en/jpg/blackbg.jpg");
+}
+
+.center {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    margin-top: -20px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 6%;
+    padding-bottom: 5px;
+    background: hsla(0, 0%, 5%, 0.500);
+    text-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.400);
+    border-bottom-style: solid;
+    border-color: #feab02;
+    border-bottom-width: 2.5px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-title {
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    color: #feab02;
+    transition: 0.3s;
+    animation: 5s shake infinite alternate;
+}
+
+#main-title:hover {
+    color: #fdbd3e;
+    font-size: 40px;
+}
+
+@keyframes shake {
+    0% {
+        transform: skewX(-10deg);
+    }
+
+    5% {
+        transform: skewX(10deg);
+    }
+
+    20% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#main-title,#title-description {
+    animation: fade-in-down 1s ease-in-out;
+}
+
+#select-game-title {
+    animation: fade-in-up 1s ease-in-out;
+}
+
+#title-description {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #d9d9d8;
+    margin-top: -35px;
+}
+
+#title-description-width {
+    width: 90%;
+}
+
+#live-count-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.live-count {
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    margin-right: 8px;
+}
+
+.live-count-number {
+    color: #62e8ff;
+}
+
+#green-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #02fe41;
+    border: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#red-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #feab02;
+    border: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#content-container {
+    margin-top: 20px;
+    z-index: 2;
+}
+
+#content {
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    border-left-style: solid;
+    border-left-color: #feab02;
+    border-right-style: solid;
+    border-right-color: #feab02;
+}
+
+#select-game-title {
+    margin-top: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 295%;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+#cards {
+    margin-top: -15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 290px;
+    height: 210px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: hsla(240, 4%, 10%, 0.95);
+    border-inline-style: solid;
+    border-inline-width: 3px;
+    border-inline-color: #feab02;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px -10px #feab02;
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.card-image {
+    margin-top: -10px;
+}
+
+.game-cash {
+    margin-top: 15px;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+#game-logo1 {
+    width: 145px;
+}
+
+#game-logo2 {
+    width: 130px;
+}
+
+#game-logo3 {
+    width: 125px;
+}
+
+#game-logo4 {
+    width: 120px;
+    margin-top: 5px;
+}
+
+#game-logo5 {
+    width: 185px;
+    margin-top: 5px;
+}
+
+#game-logo6 {
+    width: 120px;
+    margin-top: 5px;
+}
+
+#fading-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fade-box-fade-in {
+    animation: fade-in-down 0.3s ease-in-out;
+}
+
+#fade-box-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#input-container {
+    background-color: rgba(18, 18, 18);
+    padding: 20px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #feab02;
+    border-width: 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+    transform: scale(1);
+}
+
+.header-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #feab02;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#textInput-title,
+#selectInput-title,
+#checkInput-title {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+#userTextInput,
+#userSelectInput {
+    margin-top: -10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #feab02;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+#userTextInput {
+    width: 95%;
+    height: 20px;
+}
+
+#userTextInput::placeholder {
+    color: white
+}
+
+#userSelectInput {
+    width: 100%;
+    height: 38px;
+}
+
+option {
+    background-color: rgba(18, 18, 18);
+}
+
+.security-text {
+    margin-right: 16px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+}
+
+.checkbox-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 20px;
+    padding: 8px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #feab02;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.custom-checkbox:checked {
+    border-color: #02fe41;
+}
+
+.custom-checkbox::after {
+    content: "+";
+    color: #02fe41;
+    text-align: center;
+    font-size: 12.5px;
+    border-radius: 3px;
+    display: none;
+}
+
+.custom-checkbox:checked::after {
+    display: block;
+}
+
+.bn-btn {
+    width: 35%;
+    height: 20px;
+    margin: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.bn-btn:hover {
+    width: 40%;
+}
+
+#btn-back {
+    background-color: #007bff;
+}
+
+#btn-next {
+    background-color: #ff0055;
+}
+
+#note-container {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    border-top-style: solid;
+    border-top-color: #feab02;
+    text-align: center;
+}
+
+#note-title {
+    color: #ff006a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#note {
+    margin-top: -15px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.normal-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.ads-container {
+    padding: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #feab02;
+}
+
+.ad-content {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #feab02;
+    background-color: rgba(254, 170, 2, 0.06);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.ad-content:hover {
+    margin: 5px;
+    border-width: 1.5px;
+    background-color: rgba(254, 170, 2, 0.2);
+}
+
+.tasks-links {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+#share-note-container {
+    font-family: 'Inter', sans-serif;
+}
+
+#share-note-box {
+    text-align: center;
+}
+
+.sharing-note {
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+
+#share-link-box {
+    width: 75%;
+    height: 35px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharing-link-text {
+    width: 90%;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+#copy-link {
+    width: 35%;
+    height: 20px;
+    padding: 7px;
+    color: white;
+    font-size: 18px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: #007bff;
+    transition: 0.3s;
+}
+
+#copy-link:hover {
+    cursor: pointer;
+    background-color: #2b90fc;
+}
+
+.generator-loading-icon {
+    display: inline-block;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 45%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px double #ff006a;
+    border-top: 10px solid white;
+    filter: drop-shadow(0px 0px 10px #0000008e);
+    animation: loading-icon 2s linear infinite
+}
+
+@keyframes loading-icon {
+    from {
+        transform: rotate(0);
+        transform: rotate(360deg)
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    color: #d9d9d8;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: hsla(0, 0%, 7%, 0.8);
+    background-position: center;
+    background-size: cover;
+    border-top-style: solid;
+    border-top-color: #feab02;
+    border-top-width: 2.5px;
+}
